@@ -1,0 +1,6 @@
+framework module Pods_chicksTagging {
+  umbrella header "Pods-chicksTagging-umbrella.h"
+
+  export *
+  module * { export * }
+}

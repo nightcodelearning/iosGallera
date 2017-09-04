@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75BB5DCBABB8D86DAFADB3C5 /* Pods_chicksTagging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD928E08C78722FD19E593D /* Pods_chicksTagging.framework */; };
+		ED3D75691F5CE9F800CB06FE /* ChickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D75681F5CE9F800CB06FE /* ChickViewController.swift */; };
 		EDD705F71F55195800F6D382 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD705F61F55195800F6D382 /* AppDelegate.swift */; };
 		EDD705F91F55195800F6D382 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD705F81F55195800F6D382 /* ViewController.swift */; };
 		EDD705FC1F55195800F6D382 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD705FA1F55195800F6D382 /* Main.storyboard */; };
 		EDD705FE1F55195800F6D382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD705FD1F55195800F6D382 /* Assets.xcassets */; };
 		EDD706011F55195800F6D382 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD705FF1F55195800F6D382 /* LaunchScreen.storyboard */; };
+		EDD706091F551A0000F6D382 /* Chick.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD706081F551A0000F6D382 /* Chick.swift */; };
+		EDD7060E1F551E0700F6D382 /* ChickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD7060D1F551E0700F6D382 /* ChickTableViewCell.swift */; };
+		EDD706101F5522B700F6D382 /* ChickTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD7060F1F5522B700F6D382 /* ChickTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F355ECFBE0703DF28A834AE /* Pods-chicksTagging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chicksTagging.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chicksTagging/Pods-chicksTagging.debug.xcconfig"; sourceTree = "<group>"; };
+		2DD928E08C78722FD19E593D /* Pods_chicksTagging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chicksTagging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AAA45AB598B67715587BC74 /* Pods-chicksTagging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chicksTagging.release.xcconfig"; path = "Pods/Target Support Files/Pods-chicksTagging/Pods-chicksTagging.release.xcconfig"; sourceTree = "<group>"; };
+		ED3D75681F5CE9F800CB06FE /* ChickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChickViewController.swift; sourceTree = "<group>"; };
 		EDD705F31F55195800F6D382 /* chicksTagging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chicksTagging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD705F61F55195800F6D382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDD705F81F55195800F6D382 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,9 @@
 		EDD705FD1F55195800F6D382 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDD706001F55195800F6D382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDD706021F55195800F6D382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDD706081F551A0000F6D382 /* Chick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Chick.swift; path = Models/Chick.swift; sourceTree = "<group>"; };
+		EDD7060D1F551E0700F6D382 /* ChickTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChickTableViewCell.swift; sourceTree = "<group>"; };
+		EDD7060F1F5522B700F6D382 /* ChickTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChickTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75BB5DCBABB8D86DAFADB3C5 /* Pods_chicksTagging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45FB61621678DC819264DE81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DD928E08C78722FD19E593D /* Pods_chicksTagging.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CABE1A0C85D61CA89648524 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F355ECFBE0703DF28A834AE /* Pods-chicksTagging.debug.xcconfig */,
+				3AAA45AB598B67715587BC74 /* Pods-chicksTagging.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EDD705EA1F55195800F6D382 = {
 			isa = PBXGroup;
 			children = (
 				EDD705F51F55195800F6D382 /* chicksTagging */,
 				EDD705F41F55195800F6D382 /* Products */,
+				5CABE1A0C85D61CA89648524 /* Pods */,
+				45FB61621678DC819264DE81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +88,24 @@
 			children = (
 				EDD705F61F55195800F6D382 /* AppDelegate.swift */,
 				EDD705F81F55195800F6D382 /* ViewController.swift */,
+				ED3D75681F5CE9F800CB06FE /* ChickViewController.swift */,
+				EDD7060D1F551E0700F6D382 /* ChickTableViewCell.swift */,
+				EDD7060F1F5522B700F6D382 /* ChickTableViewController.swift */,
 				EDD705FA1F55195800F6D382 /* Main.storyboard */,
+				EDD7060A1F551A0700F6D382 /* Models */,
 				EDD705FD1F55195800F6D382 /* Assets.xcassets */,
 				EDD705FF1F55195800F6D382 /* LaunchScreen.storyboard */,
 				EDD706021F55195800F6D382 /* Info.plist */,
 			);
 			path = chicksTagging;
+			sourceTree = "<group>";
+		};
+		EDD7060A1F551A0700F6D382 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDD706081F551A0000F6D382 /* Chick.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDD706051F55195800F6D382 /* Build configuration list for PBXNativeTarget "chicksTagging" */;
 			buildPhases = (
+				D8E2C33347BD212D2AC52457 /* [CP] Check Pods Manifest.lock */,
 				EDD705EF1F55195800F6D382 /* Sources */,
 				EDD705F01F55195800F6D382 /* Frameworks */,
 				EDD705F11F55195800F6D382 /* Resources */,
+				9970A8B5F9502FFAD158094C /* [CP] Embed Pods Frameworks */,
+				936BA62CA885BDEA6101DCBA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,13 +179,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		936BA62CA885BDEA6101DCBA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chicksTagging/Pods-chicksTagging-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9970A8B5F9502FFAD158094C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-chicksTagging/Pods-chicksTagging-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chicksTagging/Pods-chicksTagging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8E2C33347BD212D2AC52457 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chicksTagging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EDD705EF1F55195800F6D382 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD7060E1F551E0700F6D382 /* ChickTableViewCell.swift in Sources */,
+				ED3D75691F5CE9F800CB06FE /* ChickViewController.swift in Sources */,
+				EDD706091F551A0000F6D382 /* Chick.swift in Sources */,
 				EDD705F91F55195800F6D382 /* ViewController.swift in Sources */,
 				EDD705F71F55195800F6D382 /* AppDelegate.swift in Sources */,
+				EDD706101F5522B700F6D382 /* ChickTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +368,7 @@
 		};
 		EDD706061F55195800F6D382 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F355ECFBE0703DF28A834AE /* Pods-chicksTagging.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3XHBZAYT5B;
@@ -274,6 +382,7 @@
 		};
 		EDD706071F55195800F6D382 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AAA45AB598B67715587BC74 /* Pods-chicksTagging.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3XHBZAYT5B;
@@ -304,6 +413,7 @@
 				EDD706071F55195800F6D382 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
