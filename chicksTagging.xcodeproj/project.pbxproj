@@ -8,32 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		75BB5DCBABB8D86DAFADB3C5 /* Pods_chicksTagging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD928E08C78722FD19E593D /* Pods_chicksTagging.framework */; };
+		ED0BA4231F6079B3006699A6 /* ownerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0BA4221F6079B3006699A6 /* ownerTableViewController.swift */; };
 		ED3D75691F5CE9F800CB06FE /* ChickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D75681F5CE9F800CB06FE /* ChickViewController.swift */; };
+		ED7A69691F61D3CB00D5DD68 /* Chicken.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7A69681F61D3CB00D5DD68 /* Chicken.swift */; };
+		ED7A696D1F6256A200D5DD68 /* OwnerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7A696C1F6256A200D5DD68 /* OwnerTableViewCell.swift */; };
+		ED7A696F1F6258D100D5DD68 /* OwnerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7A696E1F6258D100D5DD68 /* OwnerInterface.swift */; };
 		EDD705F71F55195800F6D382 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD705F61F55195800F6D382 /* AppDelegate.swift */; };
-		EDD705F91F55195800F6D382 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD705F81F55195800F6D382 /* ViewController.swift */; };
 		EDD705FC1F55195800F6D382 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD705FA1F55195800F6D382 /* Main.storyboard */; };
 		EDD705FE1F55195800F6D382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD705FD1F55195800F6D382 /* Assets.xcassets */; };
 		EDD706011F55195800F6D382 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD705FF1F55195800F6D382 /* LaunchScreen.storyboard */; };
-		EDD706091F551A0000F6D382 /* Chick.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD706081F551A0000F6D382 /* Chick.swift */; };
 		EDD7060E1F551E0700F6D382 /* ChickTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD7060D1F551E0700F6D382 /* ChickTableViewCell.swift */; };
 		EDD706101F5522B700F6D382 /* ChickTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD7060F1F5522B700F6D382 /* ChickTableViewController.swift */; };
+		EDF252EB1F69AB8A00FEDABA /* DateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF252EA1F69AB8A00FEDABA /* DateListTableViewController.swift */; };
+		EDF252ED1F69BA3000FEDABA /* DateInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF252EC1F69BA3000FEDABA /* DateInterface.swift */; };
+		EDF252EF1F6A392D00FEDABA /* DatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF252EE1F6A392D00FEDABA /* DatesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F355ECFBE0703DF28A834AE /* Pods-chicksTagging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chicksTagging.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chicksTagging/Pods-chicksTagging.debug.xcconfig"; sourceTree = "<group>"; };
 		2DD928E08C78722FD19E593D /* Pods_chicksTagging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chicksTagging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAA45AB598B67715587BC74 /* Pods-chicksTagging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chicksTagging.release.xcconfig"; path = "Pods/Target Support Files/Pods-chicksTagging/Pods-chicksTagging.release.xcconfig"; sourceTree = "<group>"; };
+		ED0BA4221F6079B3006699A6 /* ownerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ownerTableViewController.swift; sourceTree = "<group>"; };
 		ED3D75681F5CE9F800CB06FE /* ChickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChickViewController.swift; sourceTree = "<group>"; };
+		ED7A69681F61D3CB00D5DD68 /* Chicken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Chicken.swift; path = Models/Chicken.swift; sourceTree = "<group>"; };
+		ED7A696C1F6256A200D5DD68 /* OwnerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerTableViewCell.swift; sourceTree = "<group>"; };
+		ED7A696E1F6258D100D5DD68 /* OwnerInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerInterface.swift; sourceTree = "<group>"; };
 		EDD705F31F55195800F6D382 /* chicksTagging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chicksTagging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD705F61F55195800F6D382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDD705F81F55195800F6D382 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EDD705FB1F55195800F6D382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDD705FD1F55195800F6D382 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDD706001F55195800F6D382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDD706021F55195800F6D382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDD706081F551A0000F6D382 /* Chick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Chick.swift; path = Models/Chick.swift; sourceTree = "<group>"; };
 		EDD7060D1F551E0700F6D382 /* ChickTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChickTableViewCell.swift; sourceTree = "<group>"; };
 		EDD7060F1F5522B700F6D382 /* ChickTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChickTableViewController.swift; sourceTree = "<group>"; };
+		EDF252EA1F69AB8A00FEDABA /* DateListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateListTableViewController.swift; sourceTree = "<group>"; };
+		EDF252EC1F69BA3000FEDABA /* DateInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateInterface.swift; sourceTree = "<group>"; };
+		EDF252EE1F6A392D00FEDABA /* DatesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +97,14 @@
 			isa = PBXGroup;
 			children = (
 				EDD705F61F55195800F6D382 /* AppDelegate.swift */,
-				EDD705F81F55195800F6D382 /* ViewController.swift */,
+				EDF252EA1F69AB8A00FEDABA /* DateListTableViewController.swift */,
+				EDF252EE1F6A392D00FEDABA /* DatesTableViewCell.swift */,
 				ED3D75681F5CE9F800CB06FE /* ChickViewController.swift */,
 				EDD7060D1F551E0700F6D382 /* ChickTableViewCell.swift */,
 				EDD7060F1F5522B700F6D382 /* ChickTableViewController.swift */,
+				ED7A696C1F6256A200D5DD68 /* OwnerTableViewCell.swift */,
 				EDD705FA1F55195800F6D382 /* Main.storyboard */,
+				ED0BA4221F6079B3006699A6 /* ownerTableViewController.swift */,
 				EDD7060A1F551A0700F6D382 /* Models */,
 				EDD705FD1F55195800F6D382 /* Assets.xcassets */,
 				EDD705FF1F55195800F6D382 /* LaunchScreen.storyboard */,
@@ -103,7 +116,9 @@
 		EDD7060A1F551A0700F6D382 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EDD706081F551A0000F6D382 /* Chick.swift */,
+				ED7A696E1F6258D100D5DD68 /* OwnerInterface.swift */,
+				ED7A69681F61D3CB00D5DD68 /* Chicken.swift */,
+				EDF252EC1F69BA3000FEDABA /* DateInterface.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -241,11 +256,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDD7060E1F551E0700F6D382 /* ChickTableViewCell.swift in Sources */,
+				ED7A69691F61D3CB00D5DD68 /* Chicken.swift in Sources */,
 				ED3D75691F5CE9F800CB06FE /* ChickViewController.swift in Sources */,
-				EDD706091F551A0000F6D382 /* Chick.swift in Sources */,
-				EDD705F91F55195800F6D382 /* ViewController.swift in Sources */,
+				ED7A696F1F6258D100D5DD68 /* OwnerInterface.swift in Sources */,
+				EDF252ED1F69BA3000FEDABA /* DateInterface.swift in Sources */,
+				EDF252EF1F6A392D00FEDABA /* DatesTableViewCell.swift in Sources */,
+				ED0BA4231F6079B3006699A6 /* ownerTableViewController.swift in Sources */,
+				ED7A696D1F6256A200D5DD68 /* OwnerTableViewCell.swift in Sources */,
 				EDD705F71F55195800F6D382 /* AppDelegate.swift in Sources */,
 				EDD706101F5522B700F6D382 /* ChickTableViewController.swift in Sources */,
+				EDF252EB1F69AB8A00FEDABA /* DateListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

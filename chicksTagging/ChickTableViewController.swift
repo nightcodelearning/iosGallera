@@ -15,15 +15,12 @@ class ChickTableViewController: UITableViewController {
 
     //MARK: Properties
     
-    var chickList = [Chick]()
+    var selectedOwner = OwnerInterface(ownerName: "", ownerId: 0)
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        loadChiklist()
-
-
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,7 +37,7 @@ class ChickTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return chickList.count
+        return selectedOwner.chickenArray.count
     }
 
     
@@ -55,62 +52,25 @@ class ChickTableViewController: UITableViewController {
                 fatalError("Error al agregar la celda al table view")
         }
         
-        let chickFromList = chickList[indexPath.row]
+        let chickFromList = selectedOwner.chickenArray[indexPath.row]
         
     
-        Alamofire.request(chickFromList.chickImageURL).responseImage { response in
+        Alamofire.request(chickFromList.image_url).responseImage { response in
             
             if let image = response.result.value {
                 
-//                let size = CGSize(width: 90.0, height: 90.0)
-                
-                // Scale image to size disregarding aspect ratio
-//                let scaledImage = image.af_imageScaled(to: size)
                 cell.chickImageView.image = image
                 chickFromList.chickImage = image
-                cell.ownerLabel.text = chickFromList.ownerName
-                cell.coliseoTagLabel.text = chickFromList.coliseoTag
-                cell.castadorTagLabel.text = chickFromList.castadorTag
+                cell.ownerLabel.text = chickFromList.owner_name
+                cell.coliseoTagLabel.text = chickFromList.coliseo_plate_number
+                cell.castadorTagLabel.text = chickFromList.breeder_plate_number
             }
         }
         return cell
     }
     
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     
      //MARK: - Navigation
@@ -120,12 +80,10 @@ class ChickTableViewController: UITableViewController {
         super.prepare(for: segue, sender: sender)
         
         switch(segue.identifier ?? "") {
-            
-        case "AddItem":
-        os_log("Adding a new chick.", log: OSLog.default, type: .debug)
+
         
-        case "ShowDetail":
-        guard let chickDetailViewController = segue.destination as? ChickViewController else {
+        case "ShowChickenDetail":
+        guard let chickDetailViewController = segue.destination as? ChickDetailTableViewController else {
             fatalError("Unexpected destination: \(segue.destination)")
         }
 
@@ -137,8 +95,8 @@ class ChickTableViewController: UITableViewController {
             fatalError("The selected cell is not being displayed by the table")
         }
 
-        let selectedChick = chickList[indexPath.row]
-        chickDetailViewController.chick = selectedChick
+        let selectedChick = selectedOwner.chickenArray[indexPath.row]
+        chickDetailViewController.selectedChicken = selectedChick
 
         default:
         fatalError("Unexpected Segue Identifier; \(segue.identifier)")
@@ -148,30 +106,7 @@ class ChickTableViewController: UITableViewController {
         
     }
     
+   
     
     
-    //Mark: Private Methods
-    
-    private func loadChiklist(){
-
-        //let image = UIImage(named: "DefaultImage")
-        
-        let chick1 = Chick(chickImageURL: "https://httpbin.org/image/png", ownerName: "Dario  R", registerDate: Date(), castadorTag: "Aw-103", castadorName: "peter parker", coliseoTag: "123-456", taggerName: "Homero simpson",chickImage :UIImage())
-        
-        let chick2 = Chick(chickImageURL: "https://httpbin.org/image/png", ownerName: "Ines Rojas", registerDate: Date(), castadorTag: "AT-Walker", castadorName: "peter parker", coliseoTag: "R2D2", taggerName: "Homero simpson",chickImage :UIImage())
-        
-        chickList.append(chick1!)
-        chickList.append(chick2!)
-        
-        
-
-        
-    }
-    
-    
-  
-    
-    
-    
-
 }
